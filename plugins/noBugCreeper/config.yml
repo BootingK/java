@@ -1,0 +1,6 @@
+msg1: "&cO local está soterrado por blocos"
+
+punicao:
+  tipo: "comando" # none,comando
+  comando: "ban %player% Abuso de Bug" 
+
