@@ -1,7 +1,7 @@
 <html>
-<center>
-<h1> Veja também.. </h1>
 
+<h1> Veja também.. </h1>
+<center>
 Código-fonte deste plugin :
   <a href="https://github.com/BootingK/java/tree/master/noBug"> CLIQUE </a> <br>                 
 Tópico GamersBoard :
