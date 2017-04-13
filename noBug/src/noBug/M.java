@@ -41,6 +41,15 @@ public class M extends JavaPlugin implements Listener{
 				if(getConfig().getString("punicao.tipo").equalsIgnoreCase("NONE") == false){
 					Bukkit.dispatchCommand(Bukkit.getConsoleSender(), getConfig().getString("punicao.comando").replace("%player%", p.getName()));
 				}
+			}else if((clickBlokead.getType() == Material.STONE_PLATE) 
+					|| (clickBlokead.getType() == Material.WOOD_PLATE)
+					|| (clickBlokead.getType() == Material.IRON_PLATE)
+					|| (clickBlokead.getType() == Material.GOLD_PLATE)) {
+				e.setCancelled(true);
+				p.sendMessage(getConfig().getString("msg1").replace("&", "§"));
+				if(getConfig().getString("punicao.tipo").equalsIgnoreCase("NONE") == false){
+					Bukkit.dispatchCommand(Bukkit.getConsoleSender(), getConfig().getString("punicao.comando").replace("%player%", p.getName()));
+				}
 			}
 		}
 		
