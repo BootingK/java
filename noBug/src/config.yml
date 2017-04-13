@@ -1,0 +1,7 @@
+msg1: "&cO bloco está soterrado por blocos"
+msg2: "&cO bloco que era para ser spawnado está soterrado"
+
+punicao:
+  tipo: "NONE" # none,comando
+  comando: "ban %player% 1 H Abuso de Bug" 
+
