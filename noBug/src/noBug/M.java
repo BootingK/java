@@ -34,6 +34,7 @@ public class M extends JavaPlugin implements Listener{
 		if(e.getAction() == Action.LEFT_CLICK_AIR || e.getAction() == Action.LEFT_CLICK_BLOCK) return;
 		if(p.getItemInHand().getType().equals(Material.getMaterial(383))){
 			Block clickBlokead = e.getClickedBlock();
+			// Poderia ter feito com BlockFace,porém achei melhor assim
 			Location locCima = new Location(clickBlokead.getWorld(),clickBlokead.getLocation().getX(), clickBlokead.getLocation().getY() + 2,clickBlokead.getLocation().getZ());
 			if((locCima.getBlock().getType() != Material.AIR)){
 				e.setCancelled(true);
